@@ -15,7 +15,14 @@
 
 <body>
     <img src="images/wp6344300.jpg" alt="image" id="bgimg">
+    <div class="menu">
+        <a href="#firstpart" >Home</a>
+        <a href="#secondpage">Skills</a>
+        <a href="#thirdpage">Projects</a>
+        <a href="#fourthpage">Contact</a>
+    </div>
     <div id="firstpart">
+       
         <label id="info">Hi, I am <span id="name">Gaurav Patil</span><br>
             Student of <br><span id="branch">Information Technology</span></label>
 
@@ -37,7 +44,27 @@
     <div id="secondpage">
 
         <div id="projectframe">
-            <h2 id="skilltxt">Skills & Projects</h2>
+            <h2 id="skilltxt">Skills & <span>Projects</span></h2>
+           
+            <div id="skills">
+                <ul>
+                    <li><img src="images/java.png">
+                        <div class="javaprog"></div><label>Java</label><span>70%</span>
+                    </li>
+                    <li><img src="images/database.png">
+                        <div class="sqlprog""></div><label>SQL</label><span>80%</span>
+                    </li>
+                    <li><img src="images/html.png">
+                            <div class="htmlprog"></div><label>HTML</label><span>96%</span>
+                    </li>
+                    <li><img src="images/css-3.png">
+                        <div class="cssprog"></div><label>CSS</label><span>95%</span>
+                    </li>
+                    <li><img src="images/java-script.png">
+                        <div class="jsprog"></div><label>JavaScript</label><span>52%</span>
+                    </li>
+                </ul>
+            </div>
             <div id="projects">
                 <ul>
                     <li><img src="images/bmi.png" id="bmilogo">
@@ -54,25 +81,6 @@
                     </li>
                     <li><img src="images/social.png" id="spotifylogo">
                         <h4>Spotify Home Page by using HTML & CSS</h4>
-                    </li>
-                </ul>
-            </div>
-            <div id="skills">
-                <ul>
-                    <li><img src="images/java.png">
-                        <div class="javaprog"></div><label>Java</label><span>68%</span>
-                    </li>
-                    <li><img src="images/database.png">
-                        <div class="sqlprog""></div><label>SQL</label><span>80%</span>
-                    </li>
-                    <li><img src="images/html.png">
-                            <div class="htmlprog"></div><label>HTML</label><span>95%</span>
-                    </li>
-                    <li><img src="images/css-3.png">
-                        <div class="cssprog"></div><label>CSS</label><span>96%</span>
-                    </li>
-                    <li><img src="images/java-script.png">
-                        <div class="jsprog"></div><label>JavaScript</label><span>52%</span>
                     </li>
                 </ul>
             </div>
@@ -120,9 +128,20 @@
             </div>
         </div>
 
+        <div id="netflixinfo">
+            <div id="netflixhead"><img src="images/netflix.png">
+                <h2 id="netflixtxt">Netflix Clone</h2>
+            </div>
+            <p>Designed a Netflix clone frontend using HTML, CSS and JavaScript</p>
+            <button id="view4">View code</button>
+            <div id="netfliximges">
+                <img src="images/netflixpage.png">
+            </div>
+        </div>
+
     </div>
     <div id="fourthpage">
-        <h2 id="contacttxt">Let's Connect !</h2>
+        <h2 id="contacttxt">Get in <span>Touch !</span> </h2>
         <div id="media">
             <img src="images/icons8-linkedin-logo-100.png" id="linkdin" onclick="linkedin()">
             <img src="images/icons8-github-100.png" id="github" onclick="github()">
