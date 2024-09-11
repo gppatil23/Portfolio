@@ -3,14 +3,14 @@ $(function () {
     $('#info').slideDown(500);
     
     $(window).scroll(function () { 
-            if(($(document).scrollTop()>400)){
+           { if(($(document).scrollTop()>400)){
                 $(".javaprog").addClass("javaprog1");
                 $(".sqlprog").addClass("sqlprog1");
                 $(".htmlprog").addClass("htmlprog1");
                 $(".jsprog").addClass("jsprog1");
                 $(".cssprog").addClass("cssprog1");
 
-                $("#projects").slideDown(1000);
+                $("#projects").slideDown(500);
 
         
             } else{
@@ -20,9 +20,50 @@ $(function () {
                 $(".jsprog").removeClass("jsprog1");
                 $(".cssprog").removeClass("cssprog1");
 
-                $("#projects").slideUp(1000);
+                $("#projects").slideUp(500);
+
+            }}
+
+        {
+            if ($(document).scrollTop()>900) {
+                $("#bmiinfo p").slideDown(500);
+                
+
+            } else {
+                $("#bmiinfo p").slideUp(500);
 
             }
+        }
+        {
+            if ($(document).scrollTop()>1300) {
+                $("#googleinfo p").slideDown(500);
+                
+
+            } else {
+                $("#googleinfo p").slideUp(500);
+
+            }
+        }
+        {
+            if ($(document).scrollTop()>2000) {
+                $("#financeinfo p").slideDown(500);
+                
+
+            } else {
+                $("#financeinfo p").slideUp(500);
+
+            }
+        }
+        {
+            if ($(document).scrollTop()>2300) {
+                $("#netflixinfo p").slideDown(500);
+                
+
+            } else {
+                $("#netflixinfo p").slideUp(500);
+
+            }
+        }
            
     });
 
@@ -43,10 +84,8 @@ $(function () {
         window.location.href = "https://github.com/gppatil23/Netflix-Frontend";
     })
 
-    $("#view5").click(function () {
-        window.location.href = "https://github.com/gppatil23/Spotify-Design-Page";
-    })
 
+   
 })
 
 function linkedin() {
